@@ -21,8 +21,8 @@ export default function HomeScreen({navigation}) {
       <View style={styles.separator} />
       <View style={styles.container}>
         <Button
-          title="Teste"
-          onPress={() => navigation.navigate('ScreenToDos')}
+          title="Alterar livro"
+          onPress={() => navigation.navigate('UpdateLivro')}
           style={{marginTop: 50}}
         />
         <StatusBar style="auto" />

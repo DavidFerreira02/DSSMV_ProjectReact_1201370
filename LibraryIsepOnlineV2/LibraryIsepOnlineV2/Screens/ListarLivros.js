@@ -46,8 +46,10 @@ const ListarLivros = () => {
             renderItem={({item}) => (
               <View style={{paddingBottom: 10}}>
                 <Text style={styles.movieText}>
-                  {item.book.isbn},{item.book.title},{item.stock},
-                  {item.book.numberOfPages}
+                  ISBN : {item.book.isbn}{"\n"}
+                  Título: {item.book.title}{"\n"}
+                  Stock: {item.stock}{"\n"}
+                  Nº de páginas: {item.book.numberOfPages}{"\n"}
                 </Text>
               </View>
             )}

@@ -3,8 +3,9 @@ import ListarLivros from './Screens/ListarLivros';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import GetLivro from './Screens/GetLivro';
-import ScreenToDos from './Screens/ScreenToDos';
+import ScreenToDos from './Screens/UpdateLivro';
 import React, {Component} from 'react';
+import UpdateLivro from './Screens/UpdateLivro';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +21,7 @@ class App extends Component {
           />
           <Stack.Screen name="ListarLivros" component={ListarLivros} />
           <Stack.Screen name="GetLivro" component={GetLivro} />
-          <Stack.Screen name="ScreenToDos" component={ScreenToDos} />
+          <Stack.Screen name="UpdateLivro" component={UpdateLivro} />
         </Stack.Navigator>
       </NavigationContainer>
     );
