@@ -27,6 +27,22 @@ export default function HomeScreen({navigation}) {
         />
         <StatusBar style="auto" />
       </View>
+      <View style={styles.separator} />
+      <View style={styles.container}>
+        <Button
+          title="Criar um comentário"
+          onPress={() => navigation.navigate('CreateReview')}
+          style={{marginTop: 50}}
+        />
+      </View>
+      <View style={styles.separator} />
+      <View style={styles.container}>
+        <Button
+          title="Listar comentários"
+          onPress={() => navigation.navigate('ListReview')}
+          style={{marginTop: 50}}
+        />
+      </View>
     </SafeAreaView>
   );
 }
